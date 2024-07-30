@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaleFashion</title>
+    <link rel="stylesheet" href="MaleFashion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @media (max-width:1345px) {
+
+            .main {
+                display: block;
+            }
+
+            .left {
+                /* display: flex; */
+                height: auto;
+                width: 100%;
+            }
+
+            /* .search{
+                width: 200px;
+            } */
+            .right {
+                width: 100%;
+            }
+
+            .rightupper {
+                height: 150px;
+                display: block;
+            }
+
+            .upperleft {
+                position: relative;
+                width: 100%;
+                display: flex;
+                padding-bottom: 0px;
+            }
+
+            .upperright {
+                margin-top: 20px;
+                left: 20px;
+            }
+
+            .rightlower {
+                width: auto;
+                padding-left: 20%;
+            }
+
+            .fa-solid fa-angle-down {
+                margin-right: 0px;
+            }
+
+            .cardhead i {
+
+                margin-left: 65% !important;
+            }
+
+
+        }
+
+        @media (max-width:720px) {
+            .container1 {
+                width: 90%;
+            }
+
+            .nav {
+                display: none;
+            }
+            .icons{
+                display: none;
+            }
+        }
+
+        @media (max-width:475px) {
+            .container1 {
+                padding-right: 40%;
+            }
+            .rightlower {
+                width: auto;
+                padding-left: 10%;
+            }
+            .cardhead{
+                display: flex;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .footerHead {
+                padding: 70px 5%;
+                /* Adjust padding for medium screens */
+            }
+
+            .MaleFashion,
+            .shopping,
+            .Newletter {
+                width: 45%;
+                /* Adjust width to fit two items per row on medium screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footerHead {
+                padding: 40px 5%;
+                /* Adjust padding for smaller screens */
+                flex-direction: column;
+                /* Stack items vertically */
+            }
+
+            .MaleFashion,
+            .shopping,
+            .Newletter {
+                width: 100%;
+                /* Full width on smaller screens */
+                margin: 10px 0;
+                /* Margin adjustment */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footerHead {
+                padding: 30px 5%;
+                /* Further adjusted padding for very small screens */
+            }
+
+            .shopping {
+                font-size: 16px;
+                /* Smaller font size */
+                line-height: 28px;
+                /* Adjusted line height */
+            }
+
+            h6 {
+                font-size: 16px;
+                /* Smaller font size */
+                margin: 0 0 10px;
+                /* Margin adjustment */
+            }
+
+            .footerBottom {
+                padding: 10px 0;
+                /* Adjusted padding */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <a href="" class="headerLogo">
+                        <img src="logo.png" alt="">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Pages</a>
+                            <ul class="dropdown">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Shop Details</a></li>
+                                <li><a href="#">Shopping Cart</a></li>
+                                <li><a href="#">Check Out</a></li>
+                                <li><a href="#">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <div class="headerIcons">
+                        <a href=""><img src="search.png" alt=""></a>
+                        <a href=""><img src="heart.png" alt=""></a>
+                        <a href=""><img src="cart.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="shop">
+        <div class="shop1">Shop</div>
+        <div class="shop2">Home</div>
+        <div class="shop3">></div>
+        <div class="shop4">Shop</div>
+    </div>
+    <div class="main">
+        <div class="left">
+            <div class="search">
+                <form action="">
+                    <input type="text" placeholder="Search.." style="padding: 10px; font-size: 18px;">
+                </form>
+                <!-- <i class="fa-solid fa-magnifying-glass" id="ic" style="line-height: 3;"></i> -->
+            </div>
+            <div class="part">
+                <div class="card">
+                    <div class="cardhead">
+                        <span>Category</span>
+                        <i class="fa-solid fa-angle-down" style="margin-left: 40%;" class="ic1"></i>
+                    </div>
+                    <div class="cardlower">
+                        Men(20)
+                    </div>
+                    <div class="cardlower">
+                        Women(20)
+                    </div>
+                    <div class="cardlower">
+                        Bags(20)
+                    </div>
+                    <div class="cardlower">
+                        Clothing(20)
+                    </div>
+                    <div class="cardlower">
+                        Accessories(20)
+                    </div>
+                    <div class="cardlower">
+                        Kids(20)
+                    </div>
+                </div>
+                <hr>
+                <div class="card">
+                    <div class="cardhead">
+                        <span>Branding</span>
+                        <i class="fa-solid fa-angle-down" style="margin-left: 40%;" class="ic1"></i>
+
+                    </div>
+                    <div class="cardlower">
+                        Louis Vuitton
+                    </div>
+                    <div class="cardlower">
+                        Chanel
+                    </div>
+                    <div class="cardlower">
+                        Hermes
+                    </div>
+                    <div class="cardlower">
+                        Gucci
+                    </div>
+                </div>
+                <hr>
+                <div class="card">
+                    <div class="cardhead">
+                        <span>FILTER PRICE</span>
+                        <i class="fa-solid fa-angle-down" style="margin-left: 30%;" class="ic1"></i>
+
+                    </div>
+                    <div class="cardlower">
+                        $0.00-$50.00
+                    </div>
+                    <div class="cardlower">
+                        $50.00-$100.00
+                    </div>
+                    <div class="cardlower">
+                        $100.00-$150.00
+                    </div>
+                    <div class="cardlower">
+                        $150.00-$200.00
+                    </div>
+                    <div class="cardlower">
+                        $200.00-$250.00
+                    </div>
+                    <div class="cardlower">
+                        $250.00+
+                    </div>
+                </div>
+                <hr>
+                <div class="card">
+                    <div class="cardhead">
+                        <span>Size</span>
+                        <i class="fa-solid fa-angle-down" style="margin-left: 62%;" class="ic1"></i>
+
+                    </div>
+                    <div class="cardlower1">
+                        XS
+                    </div>
+                    <div class="cardlower1">
+                        S
+                    </div>
+                    <div class="cardlower1">
+                        M
+                    </div>
+                    <div class="cardlower1">
+                        XL
+                    </div>
+                    <div class="cardlower1">
+                        2XL
+                    </div>
+                    <div class="cardlower1">
+                        XXL
+                    </div>
+                    <div class="cardlower1">
+                        3XL
+                    </div>
+                    <div class="cardlower1">
+                        4XL
+                    </div>
+                </div>
+                <hr>
+                <div class="card">
+                    <div class="cardhead">
+                        <span>Color</span>
+                        <i class="fa-solid fa-angle-down" style="margin-left: 60%;" class="ic1"></i>
+
+                    </div>
+                    <div class="cardlower2">
+                        <div class="cardlower2-1" style="background-color: black;"></div>
+                    </div>
+                    <div class="cardlower2">
+                        <div class="cardlower2-1" style="background-color: blue;"></div>
+                    </div>
+                    <div class="cardlower2">
+                        <div class="cardlower2-1" style="background-color: blue;"></div>
+                    </div>
+                    <div class="cardlower2">
+                        <div class="cardlower2-1" style="background-color: rgb(253, 122, 7);"></div>
+                    </div>
+                    <div class="cardlower2">
+                        <div class="cardlower2-1" style="background-color: rgba(55, 86, 100, 0.886)"></div>
+                    </div>
+                    <div class="cardlower2">
+                        <div class="cardlower2-1" style="background-color: rgb(236, 233, 16);"></div>
+                    </div>
+                    <div class="cardlower2">
+                        <div class="cardlower2-1" style="background-color: rgb(176, 6, 202);"></div>
+                    </div>
+                    <div class="cardlower2">
+                        <div class="cardlower2-1" style="background-color: rgb(244, 36, 36);"></div>
+                    </div>
+                    <div class="cardlower2">
+                        <div class="cardlower2-1" style="background-color: rgb(253, 249, 249);"></div>
+                    </div>
+                </div>
+                <hr>
+                <div class="card">
+                    <div class="cardhead">
+                        <span>Tags</span>
+                        <i class="fa-solid fa-angle-down" style="margin-left: 62%;" class="ic1"></i>
+
+                    </div>
+                    <div class="cardlower1">
+                        PRODUCTS
+                    </div>
+                    <div class="cardlower1">
+                        BAGS
+                    </div>
+                    <div class="cardlower1">
+                        SHOES
+                    </div>
+                    <div class="cardlower1">
+                        FASHIO
+                    </div>
+                    <div class="cardlower1">
+                        CLOTHING
+                    </div>
+                    <div class="cardlower1">
+                        HATS
+                    </div>
+                    <div class="cardlower1">
+                        ACCESSORIES
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="rightupper">
+                <div class="upperleft">
+                    <p>Showing 1-12 out of 126 Results</p>
+                </div>
+                <div class="upperright">
+                    <form action="">
+                        <label for="" style="font-size: 19px;">Sort By Price</label>
+                        <select name="" id="" style="border: 0px; font-size: 16px;">
+                            <option value="" style="border: 0px;"><b>Low to High</b></option>
+                            <option value="" style="border: 0px; "><b>High to Low</b></option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class="rightlower">
+                <div class="container1">
+                    <div class="container1-1">
+                        <img src="product-2.jpg" alt="" width="100%" height="100%">
+                        <div class="container1-1r">
+                            <ul>
+                                <li class="lii"><a href="#"><img src="heart.png" alt=""></a></li>
+                                <li class="lii"><a href="#"><img src="compare.png" alt=""></a>
+                                </li>
+                                <li class="lii"><a href="#"><img src="search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h5>Piqué Biker Jacket</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h4>$43.48</h4>
+                </div>
+                <div class="container1">
+                    <div class="container1-1">
+                        <img src="product-3.jpg" alt="" width="100%" height="100%">
+                        <div class="container1-1r">
+                            <ul>
+                                <li class="lii"><a href="#"><img src="heart.png" alt=""></a></li>
+                                <li class="lii"><a href="#"><img src="compare.png" alt=""></a>
+                                </li>
+                                <li class="lii"><a href="#"><img src="search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h5>Multi-pocket Chest Bag</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h4>$43.48</h4>
+                </div>
+                <div class="container1">
+                    <div class="container1-1">
+                        <img src="product-4.jpg" alt="" width="100%" height="100%">
+                        <div class="container1-1r">
+                            <ul>
+                                <li class="lii"><a href="#"><img src="heart.png" alt=""></a></li>
+                                <li class="lii"><a href="#"><img src="compare.png" alt=""></a>
+                                </li>
+                                <li class="lii"><a href="#"><img src="search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h5>Diagonal Textured Cap</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h4>$43.48</h4>
+                </div>
+                <div class="container1">
+                    <div class="container1-1">
+                        <img src="product-4.jpg" alt="" width="100%" height="100%">
+                        <div class="container1-1r">
+                            <ul>
+                                <li class="lii"><a href="#"><img src="heart.png" alt=""></a></li>
+                                <li class="lii"><a href="#"><img src="compare.png" alt=""></a>
+                                </li>
+                                <li class="lii"><a href="#"><img src="search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h5>Ankle Boots</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h4>$43.48</h4>
+                </div>
+                <div class="container1">
+                    <div class="container1-1">
+                        <img src="product-5.jpg" alt="" width="100%" height="100%">
+                        <div class="container1-1r">
+                            <ul>
+                                <li class="lii"><a href="#"><img src="heart.png" alt=""></a></li>
+                                <li class="lii"><a href="#"><img src="compare.png" alt=""></a>
+                                </li>
+                                <li class="lii"><a href="#"><img src="search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h5>T-shirt Contrast Pocket</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h4>$43.48</h4>
+                </div>
+                <div class="container1">
+                    <div class="container1-1">
+                        <img src="product-6.jpg" alt="" width="100%" height="100%">
+                        <div class="container1-1r">
+                            <ul>
+                                <li class="lii"><a href="#"><img src="heart.png" alt=""></a></li>
+                                <li class="lii"><a href="#"><img src="compare.png" alt=""></a>
+                                </li>
+                                <li class="lii"><a href="#"><img src="search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h5>Basic Flowing Scarf</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h4>$43.48</h4>
+                </div>
+                <div class="container1">
+                    <div class="container1-1">
+                        <img src="product-7.jpg" alt="" width="100%" height="100%">
+                        <div class="container1-1r">
+                            <ul>
+                                <li class="lii"><a href="#"><img src="heart.png" alt=""></a></li>
+                                <li class="lii"><a href="#"><img src="compare.png" alt=""></a>
+                                </li>
+                                <li class="lii"><a href="#"><img src="search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h5>Piqué Biker Jacket</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h4>$43.48</h4>
+                </div>
+                <div class="container1">
+                    <div class="container1-1">
+                        <img src="product-8.jpg" alt="" width="100%" height="100%">
+                        <div class="container1-1r">
+                            <ul>
+                                <li class="lii"><a href="#"><img src="heart.png" alt=""></a></li>
+                                <li class="lii"><a href="#"><img src="compare.png" alt=""></a>
+                                </li>
+                                <li class="lii"><a href="#"><img src="search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h5>Diagonal Textured Cap</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h4>$43.48</h4>
+                </div>
+                <div class="container1">
+                    <div class="container1-1">
+                        <img src="product-9.jpg" alt="" width="100%" height="100%">
+                        <div class="container1-1r">
+                            <ul class="product__hover">
+                                <li class="lii"><a href="#"><img src="heart.png" alt=""></a></li>
+                                <li class="lii"><a href="#"><img src="compare.png" alt=""></a>
+                                </li>
+                                <li class="lii"><a href="#"><img src="search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h5>Ankle Boots</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h4>$43.48</h4>
+                </div>
+                <div class="container1">
+                    <div class="container1-1">
+                        <img src="product-10.jpg" alt="" width="100%" height="100%">
+                        <div class="container1-1r">
+                            <ul>
+                                <li class="lii"><a href="#"><img src="heart.png" alt=""></a></li>
+                                <li class="lii"><a href="#"><img src="compare.png" alt=""></a>
+                                </li>
+                                <li class="lii"><a href="#"><img src="search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h5>T-shirt Contrast Pocket</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h4>$43.48</h4>
+                </div>
+                <div class="container1">
+                    <div class="container1-1">
+                        <img src="product-11.jpg" alt="" width="100%" height="100%">
+                        <div class="container1-1r">
+                            <ul>
+                                <li class="lii"><a href="#"><img src="heart.png" alt=""></a></li>
+                                <li class="lii"><a href="#"><img src="compare.png" alt=""></a>
+                                </li>
+                                <li class="lii"><a href="#"><img src="search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h5>Basic Flowing Scarf</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h4>$43.48</h4>
+                </div>
+                <div class="container1">
+                    <div class="container1-1">
+                        <img src="product-12.jpg" alt="" width="100%" height="100%">
+                        <div class="container1-1r">
+                            <ul>
+                                <li class="lii"><a href="#"><img src="heart.png" alt=""></a></li>
+                                <li class="lii"><a href="#"><img src="compare.png" alt=""></a>
+                                </li>
+                                <li class="lii"><a href="#"><img src="search.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h5>Multi-pocket Chest Bag</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h4>$43.48</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerHead">
+            <div class="MaleFashion">
+                <img src="footer-logo.png" alt="" style="margin: 0px 0px 30px;">
+                <p style="margin: 0px 0px 30px;">The customer is at the heart of our unique business model, which
+                    includes design.</p>
+                <a href="#"><img src="payment.png" alt="" style="margin: 0px 0px 30px;"></a>
+            </div>
+            <div class="shopping">
+                <h6>Shopping</h6>
+                <div><a href="#">Clothing Store</a></div>
+                <div><a href="#">Trending Shoes</a></div>
+                <div><a href="#">Accessories</a></div>
+                <div><a href="#">Sale</a></div>
+            </div>
+            <div class="shopping">
+                <h6>Shopping</h6>
+                <div><a href="#">Clothing Store</a></div>
+                <div><a href="#">Trending Shoes</a></div>
+                <div><a href="#">Accessories</a></div>
+                <div><a href="#">Sale</a></div>
+            </div>
+            <div class="Newletter">
+                <h6 style="margin: 0px 0px 30px;">NewLetter</h6>
+                <div class="footer__newslatter">
+                    <p style="margin-left: 0px;">Be the first to know about new arrivals, look books, sales &
+                        promos!
+                    </p>
+                    <form action="#">
+                        <input type="text" placeholder="Your email">
+                        <button type="submit"><span class="icon_mail_alt"></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="box"></div>
+        <div class="footerBottom">
+            <p style="margin: 0px; ">Copyright ©
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>2020
+                All rights reserved
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
